@@ -20,16 +20,16 @@ module.exports = {
       // => @media (max-width: 1279px) { ... }
       'xlm' : {'min': '1279px'},
       // => @media (min-width: 1279px) { ... }
+      'lg': {'max': '1024px'},
+      // => @media (max-width: 1023px) { ... }
+      'hd': {'max': '900px'},
+      // => @media (max-width: 900px) { ... }
 
       'mdlg': {'max': '880px'},
       // => @media (max-width: 880px) { ... }
       'mdlgm': {'min': '880px'},
       // => @media (max-width: 880px) { ... }
-      'hd': {'max': '900px'},
-      // => @media (max-width: 1023px) { ... }
 
-      'lg': {'max': '1024px'},
-      // => @media (max-width: 1023px) { ... }
 
       'md': {'max': '767px'},
       // => @media (max-width: 767px) { ... }
@@ -46,6 +46,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'header-image': "url('../public/images/reactBt.jpeg')",
+        "about-iamge": "url('../public/images/nodeWall.jpeg')",
       },
       colors: {
         brand: {

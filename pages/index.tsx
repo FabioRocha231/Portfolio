@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header, NavBar, SocialLinks } from "../components";
+import { AboutMe, Header, NavBar, SocialLinks } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <section className="bg-[#262626] h-screen">
+    <section className="bg-[#262626]">
       <Head>
         <title>Fabio HR Filho</title>
         <meta name="description" content="My portfolio" />
@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <NavBar />
       <main className="flex flex-col items-center justify-center w-full">
         <Header />
+        <AboutMe />
         <SocialLinks />
       </main>
     </section>

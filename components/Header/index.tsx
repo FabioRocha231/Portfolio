@@ -3,7 +3,7 @@ import { Introduction } from "../Introduction";
 
 export const Header = () => {
   return (
-    <header className="flex relative flex-col justify-center items-center bg-header-image bg-center backdrop-brightness-50 md:px-4 py-10 bg-no-repeat w-full">
+    <header className="flex relative flex-col justify-center items-center bg-header-image bg-center backdrop-brightness-50 h-[600px] hd:h-[800px] md:px-4 py-10 bg-no-repeat w-full">
       <article className="backdrop-blur w-full h-full  bg-black/40 absolute" />
       <article className="flex flex-row h-full w-full items-center justify-evenly hd:flex-col">
         <Introduction />
