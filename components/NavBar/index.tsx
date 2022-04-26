@@ -7,9 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <nav
-      className={"flex flex-row justify-evenly items-center bg-black/70 h-14"}
-    >
+    <nav className={"flex flex-row justify-evenly items-center h-14"}>
       <NavBarLogo />
       <NavBarButtons className="md:hidden" />
 

@@ -9,7 +9,7 @@ interface Props {
 }
 
 const MobileNav = ({ isOpen, setIsOpen }: Props) => {
-  const [shouldRender, setRender] = useState(isOpen);
+  const [shouldRender, setRender] = useState(false);
 
   useEffect(() => {
     if (isOpen) setRender(true);

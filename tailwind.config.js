@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      montserrat: ["Montserrat", "sans-serif"],
+    },
     screens: {
       '3xl': {'max': '1920px'},
       // => @media(max-width: 1920px) {...}
@@ -39,6 +42,9 @@ module.exports = {
     display: ['Poppins', 'system-ui', 'sans-serif'],
     body: ['Poppins', 'system-ui', 'sans-serif'],
     extend: {
+      backgroundImage: {
+        'header-image': "url('../public/images/reactBt.jpeg')",
+      },
       colors: {
         brand: {
           red: 'var(--red-violet)',
