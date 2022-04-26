@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <section className="bg-[#262626] h-screen">
       <Head>
         <title>Fabio HR Filho</title>
-        <meta name="description" content="Portfolio do Fabio" />
+        <meta name="description" content="My portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -25,6 +25,8 @@ module.exports = {
       // => @media (max-width: 880px) { ... }
       'mdlgm': {'min': '880px'},
       // => @media (max-width: 880px) { ... }
+      'hd': {'max': '900px'},
+      // => @media (max-width: 1023px) { ... }
 
       'lg': {'max': '1024px'},
       // => @media (max-width: 1023px) { ... }
