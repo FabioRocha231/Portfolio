@@ -1,5 +1,6 @@
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
-// '#a1ecfb' : '#26dafd'
+import { SiGmail } from "react-icons/si";
+
 export const SocialLinks = () => {
   return (
     <aside
@@ -25,6 +26,17 @@ export const SocialLinks = () => {
         className={"socialLink "}
       >
         <FaGithub
+          className="text-[#61dafb] hover:text-[#a1ecfb] hover:shadow-teal-300 hover:scale-105"
+          size={"2rem"}
+        />
+      </a>
+      <a
+        href="mailto:fabioharoldo1@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+        className={"socialLink "}
+      >
+        <SiGmail
           className="text-[#61dafb] hover:text-[#a1ecfb] hover:shadow-teal-300 hover:scale-105"
           size={"2rem"}
         />
