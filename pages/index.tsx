@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <main className="flex flex-col items-center justify-center h-full w-full">
+      <main className="flex flex-col items-center justify-center w-full">
         <Header />
         <SocialLinks />
       </main>
