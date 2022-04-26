@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { AboutMe, Header, NavBar, SocialLinks } from "../components";
+import { AboutMe, Header, MySkill, NavBar, SocialLinks } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       <main className="flex flex-col items-center justify-center w-full">
         <Header />
         <AboutMe />
+        <MySkill />
         <SocialLinks />
       </main>
     </section>

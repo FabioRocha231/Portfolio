@@ -46,7 +46,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'header-image': "url('../public/images/reactBt.jpeg')",
-        "about-iamge": "url('../public/images/nodeWall.jpeg')",
+        "mySkill": "url('../public/images/nodeWall.jpeg')",
       },
       colors: {
         brand: {
