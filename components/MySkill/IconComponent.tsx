@@ -10,8 +10,8 @@ export const IconComponent = ({ icon, className }: IconCompoentProps) => {
   return (
     <motion.article
       whileHover={{ rotate: 180 }}
-      transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
-      className={`${className} flex justify-center items-center w-[150px] h-[150px]`}
+      transition={{ type: "spring", stiffness: 100, delay: 0.1, duration: 2 }}
+      className={`${className} flex justify-center items-center`}
     >
       {icon}
     </motion.article>

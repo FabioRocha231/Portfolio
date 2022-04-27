@@ -14,6 +14,7 @@ export const NavBarButtons = ({ className }: PropsNavBarButtons) => {
       <Button
         className="p-1 hover:border-b-2 font-montserrat text-lg hover:border-cyan-400 transition-all duration-75 hover:animate-pulse"
         content="About"
+        href="#about"
       />
       <Button
         className="p-1 hover:border-b-2 font-montserrat text-lg hover:border-cyan-400 transition-all duration-75 hover:animate-pulse"
@@ -22,6 +23,7 @@ export const NavBarButtons = ({ className }: PropsNavBarButtons) => {
       <Button
         className="p-1 hover:border-b-2 font-montserrat text-lg hover:border-cyan-400 transition-all duration-75 hover:animate-pulse"
         content="Skils"
+        href="#skills"
       />
     </aside>
   );

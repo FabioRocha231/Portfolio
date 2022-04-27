@@ -1,9 +1,16 @@
 import Image from "next/image";
 import { Infos } from "./infos";
 
-export const AboutMe = () => {
+type AboutMeProps = {
+  id?: string;
+};
+
+export const AboutMe = ({ id }: AboutMeProps) => {
   return (
-    <section className="flex relative flex-col w-full items-center bg-black">
+    <section
+      id={id}
+      className="flex relative flex-col w-full items-center bg-black"
+    >
       <h2 className="text-4xl text-white font-montserrat my-10 z-10">
         About Me
       </h2>

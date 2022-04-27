@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       <NavBar />
       <main className="flex flex-col items-center justify-center w-full">
         <Header />
-        <AboutMe />
-        <MySkill />
+        <AboutMe id={"about"} />
+        <MySkill id={"skills"} />
         <SocialLinks />
       </main>
     </section>
