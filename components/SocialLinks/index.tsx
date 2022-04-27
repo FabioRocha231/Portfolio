@@ -23,7 +23,7 @@ export const SocialLinks = () => {
         href="https://github.com/FabioRocha231"
         target="_blank"
         rel="noreferrer"
-        className={"socialLink "}
+        className={"socialLink"}
       >
         <FaGithub
           className="text-[#61dafb] hover:text-[#a1ecfb] hover:shadow-teal-300 hover:scale-105"
@@ -34,7 +34,7 @@ export const SocialLinks = () => {
         href="mailto:fabioharoldo1@gmail.com"
         target="_blank"
         rel="noreferrer"
-        className={"socialLink "}
+        className={"socialLink"}
       >
         <SiGmail
           className="text-[#61dafb] hover:text-[#a1ecfb] hover:shadow-teal-300 hover:scale-105"
