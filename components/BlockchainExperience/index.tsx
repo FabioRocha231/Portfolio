@@ -1,15 +1,16 @@
-import { useState } from "react";
-import { UseWidth } from "../../hooks/UseWidth";
-import { SolanaJs } from "./solanaJs";
-import { WaxJs } from "./waxJs";
+import { useState } from 'react'
+
+import { UseWidth } from '../../hooks/UseWidth'
+import { SolanaJs } from './solanaJs'
+import { WaxJs } from './waxJs'
 
 export const BlockchainExperience = () => {
-  const { width } = UseWidth();
-  const [waxClick, setWaxClick] = useState<boolean>(false);
-  const [solanaClick, setSolanaClick] = useState<boolean>(false);
+  const { width } = UseWidth()
+  const [waxClick, setWaxClick] = useState<boolean>(false)
+  const [solanaClick, setSolanaClick] = useState<boolean>(false)
   return (
-    <section className="bg-black w-full flex flex-col items-center justify-center">
-      <h2 className="text-4xl text-white font-montserrat my-10">
+    <section className="flex w-full flex-col items-center justify-center bg-black">
+      <h2 className="my-10 font-montserrat text-4xl text-white">
         Blockchain Experiences
       </h2>
 
@@ -20,5 +21,5 @@ export const BlockchainExperience = () => {
         width={width}
       />
     </section>
-  );
-};
+  )
+}
