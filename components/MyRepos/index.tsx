@@ -12,7 +12,7 @@ export const MyRepos = () => {
   }, []);
 
   return (
-    <section className="w-full flex flex-col justify-center items-center">
+    <section className="w-full flex flex-col justify-center items-center bg-black">
       <h1 className="text-4xl text-white font-montserrat my-10">My Repos</h1>
 
       <article className="w-full overflow-x-hidden">
