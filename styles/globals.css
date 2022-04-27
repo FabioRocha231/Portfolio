@@ -121,3 +121,8 @@ a {
   display: inline-block;
   white-space: nowrap;
 }
+
+.parent[data-isOpen="true"] {
+  width: 400px;
+  height: 200px;
+}

@@ -12,6 +12,7 @@ type PropsCarousel = {
 
 const Carousel = ({ state }: PropsCarousel) => {
   const [isChosen, setIsChosen] = useState<number>(-1);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [limit, setLimit] = useState<number>(0);
   const [[page, direction], setPage] = useState([0, 0]);
   const { width } = UseWidth();
@@ -38,16 +39,19 @@ const Carousel = ({ state }: PropsCarousel) => {
           i >= 0 + bounds.limit * page && (
             <motion.div
               className="h-fit bg-transparent cursor-pointer"
+              whileTap={{ scale: 0.8 }}
+              transition={{ type: "spring", stiffness: 100, duration: 2 }}
               key={i}
-              onClick={() => {
-                // window.open(git.html_url, "_blank", "noreferrer");
-              }}
-              // animate={isChosen === i ? "selected" : "notSelected"}
               variants={carouselVariants}
+              onClick={() => {
+                setTimeout(() => {
+                  window.open(git.html_url, "_blank", "noreferrer");
+                }, 400);
+              }}
             >
-              <article className="flex relative flex-col items-center justify-center text-center p-2 bg-repos bg-center bg-cover bg-no-repeat w-[250px] bg-white h-[250px] rounded-3xl">
-                <article className="backdrop-blur-sm w-full h-full  bg-white/40 rounded-3xl absolute" />
-                <p className="text-lg font-montserrat text-[#61dafb] font-bold z-[1]">
+              <article className="flex relative flex-col items-center justify-center text-center p-2 bg-repos bg-center bg-cover bg-no-repeat w-[250px] h-[250px] rounded-3xl">
+                <article className="backdrop-blur-md  w-full h-full  bg-white/10 rounded-3xl absolute" />
+                <p className="text-lg font-montserrat text-white font-bold z-[1]">
                   {git.name}
                 </p>
               </article>
