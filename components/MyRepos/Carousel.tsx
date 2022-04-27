@@ -81,7 +81,7 @@ const Carousel = ({ state }: PropsCarousel) => {
         ? +(state?.length / calculatedValue).toFixed(0) + 1
         : +(state?.length / calculatedValue).toFixed(0)
     );
-  }, [widthSize]);
+  }, [widthSize, state]);
 
   useEffect(() => {
     // reset the carousel if the user changes device width
@@ -114,7 +114,7 @@ const Carousel = ({ state }: PropsCarousel) => {
             </motion.div>
           )
       ),
-    [page, limit, isChosen]
+    [page, limit, isChosen, state]
   );
 
   const validLeft = useMemo(
