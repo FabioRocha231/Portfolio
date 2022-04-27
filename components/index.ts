@@ -1,9 +1,9 @@
-import { NavBar } from "./NavBar";
-import { Button } from "./Button";
-import { Header } from "./Header";
-import { SocialLinks } from "./SocialLinks";
-import { AboutMe } from "./AboutMe";
-import { MySkill } from "./MySkill";
-import { MyRepos } from "./MyRepos";
+import { AboutMe } from './AboutMe'
+import { Button } from './Button'
+import { Header } from './Header'
+import { MyRepos } from './MyRepos'
+import { MySkill } from './MySkill'
+import { NavBar } from './NavBar'
+import { SocialLinks } from './SocialLinks'
 
-export { NavBar, Button, Header, SocialLinks, AboutMe, MySkill, MyRepos };
+export { AboutMe, Button, Header, MyRepos, MySkill, NavBar, SocialLinks }

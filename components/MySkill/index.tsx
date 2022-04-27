@@ -1,22 +1,23 @@
-import { Icons } from "./Icons";
-import MobileIcons from "./MobileIcons";
+import { Icons } from './Icons'
+import MobileIcons from './MobileIcons'
+
 type MySkillsProps = {
-  id?: string;
-};
+  id?: string
+}
 export const MySkill = ({ id }: MySkillsProps) => {
   return (
     <section
       id={id}
-      className="w-full relative flex flex-col items-center justify-evenly bg-black overflow-x-hidden"
+      className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden bg-black"
     >
-      <h2 className="text-4xl font-montserrat text-white z-[1]">My Skills</h2>
+      <h2 className="z-[1] font-montserrat text-4xl text-white">My Skills</h2>
 
       <Icons
-        className="xsm:hidden grid grid-cols-6 xl:grid-cols-4 mdlg:grid-cols-2  gap-10 my-10"
+        className="my-10 grid grid-cols-6 gap-10 xl:grid-cols-4  mdlg:grid-cols-2 xsm:hidden"
         iconWrapperSize="w-[150px] h-[150px]"
       />
 
-      <article className="flex flex-row justify-center items-center xs:hidden h-80">
+      <article className="flex h-80 flex-row items-center justify-center xs:hidden">
         <MobileIcons>
           <Icons
             className="flex flex-row gap-x-10"
@@ -25,6 +26,6 @@ export const MySkill = ({ id }: MySkillsProps) => {
         </MobileIcons>
       </article>
     </section>
-  );
-};
+  )
+}
 // bg-mySkill bg-center bg-no-repeat

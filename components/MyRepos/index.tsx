@@ -1,23 +1,24 @@
-import { useEffect, useState } from "react";
-import { GitApi } from "../../core/class/apis/gitApi";
-import { GitApiResPonseTypes } from "../../core/types/gitApiReponseTypes";
-import Carousel from "./Carousel";
+import { useEffect, useState } from 'react'
+
+import { GitApi } from '../../core/class/apis/gitApi'
+import { GitApiResPonseTypes } from '../../core/types/gitApiReponseTypes'
+import Carousel from './Carousel'
 
 export const MyRepos = () => {
-  const [repos, setRepos] = useState<GitApiResPonseTypes[]>([]);
-  const { MyRepos } = new GitApi();
+  const [repos, setRepos] = useState<GitApiResPonseTypes[]>([])
+  const { MyReposGetter } = new GitApi()
 
   useEffect(() => {
-    MyRepos(setRepos);
-  }, []);
+    MyReposGetter(setRepos)
+  }, [])
 
   return (
-    <section className="w-full flex flex-col justify-center items-center bg-black">
-      <h1 className="text-4xl text-white font-montserrat my-10">My Repos</h1>
+    <section className="flex w-full flex-col items-center justify-center bg-black">
+      <h1 className="my-10 font-montserrat text-4xl text-white">My Repos</h1>
 
       <article className="w-full overflow-x-hidden">
         <Carousel state={repos} />
       </article>
     </section>
-  );
-};
+  )
+}

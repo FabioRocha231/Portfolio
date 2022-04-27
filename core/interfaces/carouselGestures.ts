@@ -20,5 +20,5 @@ export interface ICarouselGestures {
     state,
   }: CarouselFormatterProps): void;
 
-  CarouselReset({ setPage, setIsChosen, direction }: CarouselReset): void;
+  CarouselReset({ setPage, direction }: CarouselReset): void;
 }

@@ -1,23 +1,23 @@
-import Link from "next/link";
-import { memo, ReactNode, useEffect, useState } from "react";
-import { NavBarButtons } from "./NavBarButtons";
-import { NavBarLogo } from "./NavBarLogo";
+import { memo, useEffect, useState } from 'react'
+
+import { NavBarButtons } from './NavBarButtons'
+import { NavBarLogo } from './NavBarLogo'
 
 interface Props {
-  isOpen: boolean;
-  setIsOpen(value: boolean): void;
+  isOpen: boolean
+  setIsOpen(value: boolean): void
 }
 
 const MobileNav = ({ isOpen, setIsOpen }: Props) => {
-  const [shouldRender, setRender] = useState(false);
+  const [shouldRender, setRender] = useState(false)
 
   useEffect(() => {
-    if (isOpen) setRender(true);
-  }, [isOpen]);
+    if (isOpen) setRender(true)
+  }, [isOpen])
 
   const onAnimationEnd = () => {
-    if (!isOpen) setRender(false);
-  };
+    if (!isOpen) setRender(false)
+  }
 
   return (
     <>
@@ -25,22 +25,22 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
         <article
           onAnimationEnd={onAnimationEnd}
           style={{
-            animation: `${isOpen ? "fadeIn" : "fadeOut"} .5s`,
+            animation: `${isOpen ? 'fadeIn' : 'fadeOut'} .5s`
           }}
-          className="fixed z-[4] inset-0 glass"
+          className="glass fixed inset-0 z-[4]"
         >
           <article className="overlay" onClick={() => setIsOpen(false)} />
           <aside
             style={{
-              width: "clamp(300px, 30vw, 600px)",
-              animation: `${isOpen ? "fromLeft" : "toRight"} .5s`,
+              width: 'clamp(300px, 30vw, 600px)',
+              animation: `${isOpen ? 'fromLeft' : 'toRight'} .5s`
             }}
-            className="absolute bg-playButton max-w-full h-full right-0 z-[5]"
+            className="absolute right-0 z-[5] h-full max-w-full bg-playButton"
           >
-            <article className="h-full bg-[#274a53] w-full flex flex-col justify-center items-center gap-y-8">
+            <article className="flex h-full w-full flex-col items-center justify-center gap-y-8 bg-[#274a53]">
               <p
                 onClick={() => setIsOpen(false)}
-                className="absolute text-white font-black top-10 left-10 cursor-pointer"
+                className="absolute top-10 left-10 cursor-pointer font-black text-white"
               >
                 X
               </p>
@@ -51,7 +51,7 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
         </article>
       )}
     </>
-  );
-};
+  )
+}
 
-export default memo(MobileNav);
+export default memo(MobileNav)

@@ -4,7 +4,7 @@ import { GitApiResPonseTypes } from "../../types/gitApiReponseTypes";
 import { ErrorHandler } from "../handlers/errorHanlder";
 
 export class GitApi implements IGitApi {
-  async MyRepos(setState: Function): Promise<GitApiResPonseTypes[]> {
+  async MyReposGetter(setState: Function): Promise<GitApiResPonseTypes[]> {
     const { errorHandler } = new ErrorHandler();
     const [error, result] = await errorHandler(
       axios.get("https://api.github.com/users/FabioRocha231/repos")

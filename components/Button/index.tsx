@@ -1,9 +1,9 @@
 type ButtonProps = {
-  className: string;
-  content: string;
-  href?: string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-};
+  className: string
+  content: string
+  href?: string
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+}
 
 export const Button = ({ className, onClick, content, href }: ButtonProps) => {
   return (
@@ -12,5 +12,5 @@ export const Button = ({ className, onClick, content, href }: ButtonProps) => {
         {content}
       </a>
     </button>
-  );
-};
+  )
+}

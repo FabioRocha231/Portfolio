@@ -17,7 +17,6 @@ export type CarouselFormatterProps = {
 
 export type CarouselReset = {
   setPage: Function;
-  setIsChosen: Function;
   direction: number;
 };
 
@@ -69,9 +68,8 @@ export class CarouselGestures implements ICarouselGestures {
     );
   }
 
-  CarouselReset({ setPage, setIsChosen, direction }: CarouselReset): void {
+  CarouselReset({ setPage, direction }: CarouselReset): void {
     // reset the carousel if the user changes device width
     setPage([0, direction]);
-    setIsChosen(-1);
   }
 }
