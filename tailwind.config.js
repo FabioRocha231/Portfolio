@@ -30,7 +30,6 @@ module.exports = {
       'mdlgm': {'min': '880px'},
       // => @media (max-width: 880px) { ... }
 
-
       'md': {'max': '767px'},
       // => @media (max-width: 767px) { ... }
       'smd': {'min': '767px'},
@@ -40,6 +39,9 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
       'xsm': {'max': '390px'},
       // => @media (max-width: 639px) { ... }
+      'xs': {'min': '390px'},
+      // => @media (min-width: 639px) { ... }
+
     },
     display: ['Poppins', 'system-ui', 'sans-serif'],
     body: ['Poppins', 'system-ui', 'sans-serif'],

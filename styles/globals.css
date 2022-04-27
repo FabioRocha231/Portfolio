@@ -106,3 +106,15 @@ a {
     margin-right: 0;
   }
 }
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
+
+.hideScrollbar {
+  height: full;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
