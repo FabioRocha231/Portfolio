@@ -14,7 +14,9 @@ export const MyRepos = () => {
 
   return (
     <section className="flex w-full flex-col items-center justify-center bg-black">
-      <h1 className="my-10 font-montserrat text-4xl text-white">My Repos</h1>
+      <h1 className="my-10 font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
+        My Repos
+      </h1>
 
       <article className="w-full overflow-x-hidden">
         <Carousel state={repos} />

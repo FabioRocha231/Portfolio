@@ -10,7 +10,7 @@ export const MySkill = ({ id }: MySkillsProps) => {
       id={id}
       className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden bg-black"
     >
-      <h2 className="z-[1] my-20 font-montserrat text-4xl text-white">
+      <h2 className="my-20  font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
         My Skills
       </h2>
 
@@ -19,7 +19,7 @@ export const MySkill = ({ id }: MySkillsProps) => {
         iconWrapperSize="w-[150px] h-[150px]"
       />
 
-      <article className="flex h-80 flex-row items-center justify-center xs:hidden">
+      <article className="flex h-80 flex-row items-center justify-center bg-black sm:h-40 xs:hidden">
         <MobileIcons>
           <Icons
             className="flex flex-row gap-x-10"

@@ -8,7 +8,7 @@ import { NavBarLogo } from './NavBarLogo'
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <nav className={'flex h-14 flex-row items-center justify-evenly'}>
+    <nav className={'flex h-20 flex-row items-center justify-evenly bg-black'}>
       <NavBarLogo />
       <NavBarButtons className="md:hidden" />
 

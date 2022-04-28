@@ -4,6 +4,7 @@ import Head from 'next/head'
 import {
   AboutMe,
   BlockchainExperience,
+  Footer,
   Header,
   MyRepos,
   MySkill,
@@ -13,7 +14,7 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <section className="bg-[#262626]">
+    <section className="bg-black">
       <Head>
         <title>Fabio HR Filho - FullStack JS</title>
         <meta name="description" content="Fabio Hr - Fullstack Developer" />
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
         <BlockchainExperience />
         <MyRepos />
         <SocialLinks />
+        <Footer />
       </main>
     </section>
   )

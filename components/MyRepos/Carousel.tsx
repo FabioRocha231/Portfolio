@@ -117,7 +117,7 @@ const Carousel = ({ state }: PropsCarousel) => {
         </AnimatePresence>
         {validRight}
       </div>
-      <div className="mt-4 mb-20 text-center">
+      <div className="mt-4 mb-20 text-center sm:mb-5">
         <p className="font-montserrat text-white">
           Page <b>{page + 1}</b> of <b>{limit}</b>
         </p>

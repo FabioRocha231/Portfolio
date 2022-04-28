@@ -13,6 +13,7 @@ export interface ICarouselGestures {
   ): ReactNode;
 
   ValidLeft(page: number, iconLeft: ReactNode, iconRight: ReactNode): ReactNode;
+
   CaroulselFormatter({
     width,
     setBounds,

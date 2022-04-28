@@ -31,14 +31,14 @@ export const WaxJs = ({ setWaxClick, waxClick }: PropsWaxJs) => {
 
       {waxClick && (
         <motion.aside
-          animate={{ y: 80 }}
+          animate={{ y: 40 }}
           transition={{ delay: 0.2 }}
-          className={`w-[350px] h-[350px] transition-all items-center justify-evenly duration-300 flex flex-col px-4 shadow-white/25 shadow bg-gradient-to-r  from-[#1F1640]/50 to-[#100D26]/50 rounded-3xl`}
+          className={`w-[350px] h-[350px] sm:w-[300px] sm:h-[300px] transition-all items-center justify-evenly duration-300 flex flex-col px-4 shadow-white/25 shadow bg-gradient-to-r  from-[#1F1640]/50 to-[#100D26]/50 rounded-3xl`}
         >
-          <h3 className="mt-10 text-center font-montserrat text-lg font-bold text-white">
+          <h3 className="mt-10 text-center font-montserrat text-lg font-bold text-white sm:text-base">
             Wax Blockchain
           </h3>
-          <p className="my-10 p-4 text-left font-montserrat text-lg font-semibold text-white">
+          <p className="my-10 p-4 text-left font-montserrat text-lg font-semibold text-white sm:my-5 sm:text-base">
             I studied in depth and worked with the{' '}
             <a
               href="https://wax.atomichub.io/explorer"
