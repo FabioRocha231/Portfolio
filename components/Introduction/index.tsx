@@ -1,5 +1,5 @@
-import { HeaderInfos } from "./infos";
+import { HeaderInfos } from './infos'
 
 export const Introduction = () => {
-  return <HeaderInfos />;
-};
+  return <HeaderInfos />
+}

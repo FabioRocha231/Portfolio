@@ -1,16 +1,16 @@
-import { Icons } from "./Icons";
-import MobileIcons from "./MobileIcons";
+import { Icons } from './Icons'
+import MobileIcons from './MobileIcons'
 
 type MySkillsProps = {
-  id?: string;
-};
+  id?: string
+}
 export const MySkill = ({ id }: MySkillsProps) => {
   return (
     <section
       id={id}
       className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden bg-black"
     >
-      <h2 className="z-[1] font-montserrat text-4xl text-white my-20">
+      <h2 className="z-[1] my-20 font-montserrat text-4xl text-white">
         My Skills
       </h2>
 
@@ -28,6 +28,6 @@ export const MySkill = ({ id }: MySkillsProps) => {
         </MobileIcons>
       </article>
     </section>
-  );
-};
+  )
+}
 // bg-mySkill bg-center bg-no-repeat

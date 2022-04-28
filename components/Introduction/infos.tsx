@@ -5,10 +5,10 @@ export const HeaderInfos = () => {
         Hi, I&apos;m <span className="text-[#61dafb]">Fabio.</span>
       </h1>
       <p className="text-2xl text-white md:text-lg">
-        I&apos;m a{" "}
+        I&apos;m a{' '}
         <span className="animate-pulse text-[#05F29B]">FullStack</span> Js
         developer from Brazil!
       </p>
     </aside>
-  );
-};
+  )
+}
