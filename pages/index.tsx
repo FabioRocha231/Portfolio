@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Fabio HR Filho - FullStack JS</title>
         <meta
           name="description"
-          content="An Action-RTS P2E Game built on the Solana Blockchain - Dwarf Miners, Orcs, Elves are playable who mine crypto $SLN"
+          content="Action-RTS P2E game on Solana Blockchain"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta
