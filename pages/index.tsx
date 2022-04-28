@@ -16,7 +16,10 @@ const Home: NextPage = () => {
     <section className="bg-[#262626]">
       <Head>
         <title>Fabio HR Filho - FullStack JS</title>
-        <meta name="description" content="Fabio Hr - Fullstack Developer" />
+        <meta
+          name="description"
+          content="SolCraft is an Action-RTS P2E Game built on the Solana Blockchain that includes Dwarf Miners, Orcs, Elves as playable characters who mine crypto - $SLN"
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
