@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Fabio HR Filho - FullStack JS</title>
         <meta
           name="description"
-          content="SolCraft is an Action-RTS P2E Game built on the Solana Blockchain that includes Dwarf Miners, Orcs, Elves as playable characters who mine crypto - $SLN"
+          content="An Action-RTS P2E Game built on the Solana Blockchain - Dwarf Miners, Orcs, Elves are playable who mine crypto $SLN"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta
