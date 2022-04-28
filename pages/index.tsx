@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 import {
   AboutMe,
@@ -8,8 +8,8 @@ import {
   MyRepos,
   MySkill,
   NavBar,
-  SocialLinks,
-} from "../components";
+  SocialLinks
+} from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -32,14 +32,14 @@ const Home: NextPage = () => {
       <NavBar />
       <main className="flex w-full flex-col items-center justify-center">
         <Header />
-        <AboutMe id={"about"} />
-        <MySkill id={"skills"} />
+        <AboutMe id={'about'} />
+        <MySkill id={'skills'} />
         <BlockchainExperience />
         <MyRepos />
         <SocialLinks />
       </main>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
