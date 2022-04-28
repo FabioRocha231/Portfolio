@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import { GitApi } from '../../core/class/apis/gitApi'
-import { GitApiResPonseTypes } from '../../core/types/gitApiReponseTypes'
-import Carousel from './Carousel'
+import { GitApi } from "../../core/class/apis/gitApi";
+import { GitApiResPonseTypes } from "../../core/types/gitApiReponseTypes";
+import Carousel from "./Carousel";
 
 export const MyRepos = () => {
-  const [repos, setRepos] = useState<GitApiResPonseTypes[]>([])
-  const { MyReposGetter } = new GitApi()
+  const [repos, setRepos] = useState<GitApiResPonseTypes[]>([]);
+  const { MyReposGetter } = new GitApi();
 
   useEffect(() => {
-    MyReposGetter(setRepos)
-  }, [])
+    MyReposGetter(setRepos);
+  }, []);
 
   return (
     <section className="flex w-full flex-col items-center justify-center bg-black">
@@ -20,5 +20,5 @@ export const MyRepos = () => {
         <Carousel state={repos} />
       </article>
     </section>
-  )
-}
+  );
+};
