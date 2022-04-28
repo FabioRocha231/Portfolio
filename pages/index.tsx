@@ -16,10 +16,7 @@ const Home: NextPage = () => {
     <section className="bg-[#262626]">
       <Head>
         <title>Fabio HR Filho - FullStack JS</title>
-        <meta
-          name="description"
-          content="Action-RTS P2E game on Solana Blockchain"
-        />
+        <meta name="description" content="Fabio Hr - Fullstack Developer" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
