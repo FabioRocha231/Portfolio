@@ -22,7 +22,7 @@ module.exports = {
       // => @media (min-width: 1279px) { ... }
       'lg': {'max': '1024px'},
       // => @media (max-width: 1023px) { ... }
-      'hd': {'max': '900px'},
+      'hd': {'max': '940px'},
       // => @media (max-width: 900px) { ... }
 
       'mdlg': {'max': '880px'},

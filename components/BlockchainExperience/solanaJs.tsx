@@ -4,25 +4,20 @@ import Image from 'next/image'
 export type PropsWaxJs = {
   solanaClick: boolean
   setSolanaClick: (solanaClick: boolean) => void
-  width: number
 }
 
-export const SolanaJs = ({
-  setSolanaClick,
-  solanaClick,
-  width
-}: PropsWaxJs) => {
+export const SolanaJs = ({ setSolanaClick, solanaClick }: PropsWaxJs) => {
   return (
     <article
-      className={`flex ${
-        width <= 1151 ? 'flex-col' : 'flex-row'
-      } gap-x-32 transition-all duration-300 items-center justify-center`}
+      className={`flex flex-col gap-x-32 transition-all duration-300 items-center justify-center ${
+        solanaClick ? 'mb-20' : ''
+      }`}
     >
       <motion.aside
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setSolanaClick(!solanaClick)}
-        className={`hadow-lg hover:scale-105 flex rounded-full items-center justify-center w-[300px] h-[300px] shadow-cyan-500/50 cursor-pointer my-10`}
+        className={`my-10 flex h-[300px] w-[300px] cursor-pointer items-center justify-center rounded-full shadow-lg shadow-cyan-500/50 hover:scale-105`}
       >
         <Image
           src="/images/solanaWall.jpeg"
@@ -36,11 +31,9 @@ export const SolanaJs = ({
 
       {solanaClick && (
         <motion.aside
-          animate={width <= 1115 ? { y: 80 } : { x: 140 }}
+          animate={{ y: 80 }}
           transition={{ delay: 0.2 }}
-          className={`w-[350px] h-[350px] ${
-            width <= 1115 ? 'mb-20' : 'mb-0'
-          } transition-all items-center justify-evenly duration-300 flex flex-col px-4 shadow-white/25 shadow bg-gradient-to-r  from-[#1F1640]/50 to-[#100D26]/50 rounded-3xl`}
+          className={`w-[350px] h-[350px] mb-20' transition-all items-center justify-evenly duration-300 flex flex-col px-4 shadow-white/25 shadow bg-gradient-to-r  from-[#1F1640]/50 to-[#100D26]/50 rounded-3xl`}
         >
           <h3 className="mt-10 text-center font-montserrat text-lg font-bold text-white">
             Solana Blockchain
