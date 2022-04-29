@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 import { Icons } from './Icons'
 import MobileIcons from './MobileIcons'
 
@@ -30,4 +32,5 @@ export const MySkill = ({ id }: MySkillsProps) => {
     </section>
   )
 }
-// bg-mySkill bg-center bg-no-repeat
+
+export default memo(MySkill)

@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
@@ -44,3 +45,5 @@ export const SocialLinks = () => {
     </aside>
   )
 }
+
+export default memo(SocialLinks)

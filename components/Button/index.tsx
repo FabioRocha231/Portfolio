@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 type ButtonProps = {
   className: string
   content: string
@@ -14,3 +16,5 @@ export const Button = ({ className, onClick, content, href }: ButtonProps) => {
     </button>
   )
 }
+
+export default memo(Button)

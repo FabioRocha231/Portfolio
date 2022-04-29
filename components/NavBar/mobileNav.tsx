@@ -9,21 +9,17 @@ interface Props {
 }
 
 const MobileNav = ({ isOpen, setIsOpen }: Props) => {
-  const [shouldRender, setRender] = useState(false)
+  const [shouldRender, setRender] = useState<boolean>(false)
 
   useEffect(() => {
     if (isOpen) setRender(true)
+    if (!isOpen) setTimeout(() => setRender(false), 450)
   }, [isOpen])
-
-  const onAnimationEnd = () => {
-    if (!isOpen) setRender(false)
-  }
 
   return (
     <>
       {shouldRender && (
         <article
-          onAnimationEnd={onAnimationEnd}
           style={{
             animation: `${isOpen ? 'fadeIn' : 'fadeOut'} .5s`
           }}

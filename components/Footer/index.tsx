@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 export const Footer = () => {
   return (
     <footer className="flex h-20 w-full flex-row items-center justify-evenly bg-black sm:h-32 sm:flex-col sm:gap-y-5">
@@ -13,3 +15,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default memo(Footer)

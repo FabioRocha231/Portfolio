@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { memo, useState } from 'react'
 
 import { SolanaJs } from './solanaJs'
 import { WaxJs } from './waxJs'
@@ -17,3 +17,5 @@ export const BlockchainExperience = () => {
     </section>
   )
 }
+
+export default memo(BlockchainExperience)

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { memo, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 import MobileNav from './mobileNav'
@@ -22,3 +22,5 @@ export const NavBar = () => {
     </nav>
   )
 }
+
+export default memo(NavBar)

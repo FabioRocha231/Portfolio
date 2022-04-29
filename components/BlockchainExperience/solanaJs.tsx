@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { memo } from 'react'
 
 export type PropsWaxJs = {
   solanaClick: boolean
@@ -56,3 +57,5 @@ export const SolanaJs = ({ setSolanaClick, solanaClick }: PropsWaxJs) => {
     </article>
   )
 }
+
+export default memo(SolanaJs)

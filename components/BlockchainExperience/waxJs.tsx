@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { memo } from 'react'
 
 export type PropsWaxJs = {
   waxClick: boolean
@@ -57,3 +58,5 @@ export const WaxJs = ({ setWaxClick, waxClick }: PropsWaxJs) => {
     </article>
   )
 }
+
+export default memo(WaxJs)

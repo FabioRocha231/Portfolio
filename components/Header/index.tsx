@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { memo } from 'react'
 
 import { Introduction } from '../Introduction'
 
@@ -23,3 +24,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default memo(Header)
