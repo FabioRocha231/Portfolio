@@ -3,12 +3,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai'
 
 import { CarouselGestures } from '../../core/class/handlers/CarouselGestures'
-import { GitApiResPonseTypes } from '../../core/types/gitApiReponseTypes'
+import { GitApiResponseTypes } from '../../core/types/gitApiReponseTypes'
 import { UseWidth } from '../../hooks/UseWidth'
 import { carouselVariants, imagesVariants } from './CarouselUtils'
 
 type PropsCarousel = {
-  state: GitApiResPonseTypes[]
+  state: GitApiResponseTypes[]
 }
 
 const Carousel = ({ state }: PropsCarousel) => {
