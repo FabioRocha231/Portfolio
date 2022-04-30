@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 
 import {
   AboutMe,
@@ -10,10 +10,13 @@ import {
   NavBar,
   SocialLinks
 } from '../components'
+import { GitApi } from '../core/class/apis/gitApi'
+import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
 import { Meta } from '../layouts/Meta'
 import { Main } from '../templates'
 
-const Home: NextPage = () => {
+const Home: NextPage<{ result: GitApiResponseTypes[] }> = (props) => {
+  const { result } = props
   return (
     <Main
       meta={
@@ -30,13 +33,24 @@ const Home: NextPage = () => {
           <AboutMe id={'about'} />
           <MySkill id={'skills'} />
           <BlockchainExperience />
-          <MyRepos />
+          <MyRepos result={result} />
           <SocialLinks />
           <Footer />
         </main>
       </section>
     </Main>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { MyReposGetter } = new GitApi()
+  const result = await MyReposGetter()
+  return {
+    props: {
+      result
+    },
+    revalidate: 60
+  }
 }
 
 export default Home

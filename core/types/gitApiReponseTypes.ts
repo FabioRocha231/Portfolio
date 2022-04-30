@@ -27,7 +27,7 @@ type LicenseProps = {
   node_id: string;
 };
 
-export interface GitApiResPonseTypes {
+export interface GitApiResponseTypes {
   id: number;
   node_id: string;
   name: string;
