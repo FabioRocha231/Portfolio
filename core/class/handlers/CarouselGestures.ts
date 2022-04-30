@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { ICarouselGestures } from "../../interfaces/carouselGestures";
+import { ICarouselGestures } from "../../protocols/carouselGestures";
 
 export type ValidRightProps = {
   page: number;

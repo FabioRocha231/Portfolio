@@ -15,8 +15,7 @@ import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
 import { Meta } from '../layouts/Meta'
 import { Main } from '../templates'
 
-const Home: NextPage<{ result: GitApiResponseTypes[] }> = (props) => {
-  const { result } = props
+const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
   return (
     <Main
       meta={
@@ -49,7 +48,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       result
     },
-    revalidate: 60
+    revalidate: 60 // 60 seconds
   }
 }
 
