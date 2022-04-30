@@ -16,6 +16,7 @@ import { Meta } from '../layouts/Meta'
 import { Main } from '../templates'
 
 const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
+  console.log(result)
   return (
     <Main
       meta={
@@ -48,7 +49,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       result
     },
-    revalidate: 60 // 60 seconds
+    revalidate: 36000 // 36000 seconds
   }
 }
 

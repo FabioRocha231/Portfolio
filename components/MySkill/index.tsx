@@ -10,7 +10,7 @@ export const MySkill = ({ id }: MySkillsProps) => {
   return (
     <section
       id={id}
-      className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden bg-black"
+      className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden "
     >
       <h2 className="my-20  font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
         My Skills

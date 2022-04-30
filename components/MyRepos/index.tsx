@@ -7,7 +7,7 @@ export type MyReposProps = {
 
 export const MyRepos = ({ result }: MyReposProps) => {
   return (
-    <section className="flex w-full flex-col items-center justify-center bg-black">
+    <section className="flex w-full flex-col items-center justify-center">
       <h1 className="my-10 font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
         My Repos
       </h1>
