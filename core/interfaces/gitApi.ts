@@ -1,5 +1,5 @@
-import { GitApiResPonseTypes } from "../types/gitApiReponseTypes";
+import { GitApiResponseTypes } from "../types/gitApiReponseTypes";
 
 export interface IGitApi {
-  MyReposGetter(): Promise<GitApiResPonseTypes[]>;
+  MyReposGetter(): Promise<GitApiResponseTypes[]>;
 }
