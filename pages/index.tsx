@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from 'next'
 
 import {
   AboutMe,
@@ -8,12 +8,12 @@ import {
   MyRepos,
   MySkill,
   NavBar,
-  SocialLinks,
-} from "../components";
-import { GitApi } from "../core/class/apis/gitApi";
-import { GitApiResponseTypes } from "../core/types/gitApiReponseTypes";
-import { Meta } from "../layouts/Meta";
-import { Main } from "../templates";
+  SocialLinks
+} from '../components'
+import { GitApi } from '../core/class/apis/gitApi'
+import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
+import { Meta } from '../layouts/Meta'
+import { Main } from '../templates'
 
 const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
   return (
@@ -29,8 +29,8 @@ const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
         <NavBar />
         <main className="flex w-full flex-col items-center justify-center">
           <Header />
-          <AboutMe id={"about"} />
-          <MySkill id={"skills"} />
+          <AboutMe id={'about'} />
+          <MySkill id={'skills'} />
           <BlockchainExperience />
           <MyRepos result={result} />
           <SocialLinks />
@@ -38,18 +38,18 @@ const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
         </main>
       </section>
     </Main>
-  );
-};
+  )
+}
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { MyReposGetter } = new GitApi();
-  const result = await MyReposGetter();
+  const { MyReposGetter } = new GitApi()
+  const result = await MyReposGetter()
   return {
     props: {
-      result,
+      result
     },
-    revalidate: 60, // 1 minuto || 60scs
-  };
-};
+    revalidate: 60 // 1 minuto || 60scs
+  }
+}
 
-export default Home;
+export default Home

@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 import { useEffect, useMemo, useState } from 'react'
 import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai'
 
@@ -49,9 +50,26 @@ const Carousel = ({ state }: PropsCarousel) => {
                 }, 400)
               }}
             >
-              <article className="relative flex h-[250px] w-[250px] flex-col items-center justify-center rounded-3xl bg-repos bg-cover bg-center bg-no-repeat p-2 text-center">
-                <article className="absolute  h-full w-full  rounded-3xl bg-white/10 backdrop-blur-md" />
-                <p className="z-[1] font-montserrat text-lg font-bold text-white">
+              <article className="relative flex h-[250px] w-[250px] flex-col items-center justify-evenly gap-y-5 rounded-3xl bg-repos bg-cover bg-center bg-no-repeat p-2 text-center">
+                <article className="absolute  h-full w-full  rounded-3xl bg-[#4E7AC7]/10 backdrop-blur-sm" />
+
+                <aside className="-mt-20 flex flex-row items-center justify-center gap-x-3">
+                  <Image
+                    src={git.owner.avatar_url}
+                    width={30}
+                    height={30}
+                    quality={100}
+                    objectFit={'contain'}
+                    alt={'Avatar github'}
+                    className={`rounded-full`}
+                  />
+
+                  <p className="z-[1]  animate-pulse bg-gradient-to-br from-pink-400 to-red-600 bg-clip-text font-montserrat text-base font-extrabold text-transparent">
+                    {git.owner.login}
+                  </p>
+                </aside>
+
+                <p className="z-[1] -mb-20 font-montserrat text-base font-semibold text-white">
                   {git.name}
                 </p>
               </article>
