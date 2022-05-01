@@ -9,7 +9,7 @@ type AboutMeProps = {
 export const AboutMe = ({ id }: AboutMeProps) => {
   return (
     <section id={id} className="relative flex w-full flex-col items-center">
-      <h2 className="z-10 my-20 font-montserrat text-4xl text-white sm:my-10 sm:text-2xl">
+      <h2 className="z-10 mt-10 font-montserrat text-4xl text-white sm:my-10 sm:text-2xl">
         About Me
       </h2>
 

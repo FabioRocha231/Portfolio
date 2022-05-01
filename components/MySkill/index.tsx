@@ -10,14 +10,14 @@ export const MySkill = ({ id }: MySkillsProps) => {
   return (
     <section
       id={id}
-      className="relative flex w-full flex-col items-center justify-evenly overflow-x-hidden "
+      className="flex w-full flex-col items-center justify-evenly overflow-x-hidden "
     >
-      <h2 className="my-20  font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
+      <h2 className="mt-10 font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
         My Skills
       </h2>
 
       <Icons
-        className="my-10 grid grid-cols-6 gap-10 xl:grid-cols-4  mdlg:grid-cols-2 xsm:hidden"
+        className="mt-10 mb-20 grid grid-cols-6 gap-10 xl:grid-cols-4  mdlg:grid-cols-2 xsm:hidden"
         iconWrapperSize="w-[150px] h-[150px]"
       />
 

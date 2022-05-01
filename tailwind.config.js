@@ -50,6 +50,7 @@ module.exports = {
         'header-image': "url('../public/images/reactBt.jpeg')",
         "mySkill": "url('../public/images/nodeWall.jpeg')",
         "repos": "url('../public/images/gitWall.png')",
+        "node": "url('../public/images/nodejs.png')",
       },
       colors: {
         brand: {
