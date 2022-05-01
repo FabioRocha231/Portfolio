@@ -51,7 +51,6 @@ module.exports = {
         "mySkill": "url('../public/images/nodeWall.jpeg')",
         "repos": "url('../public/images/gitWall.png')",
         "node": "url('../public/images/nodejs.png')",
-        "blockchain": "url('../public/images/blockchain.jpeg')",
       },
       colors: {
         brand: {

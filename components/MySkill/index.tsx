@@ -12,7 +12,7 @@ export const MySkill = ({ id }: MySkillsProps) => {
       id={id}
       className="flex w-full flex-col items-center justify-evenly overflow-x-hidden "
     >
-      <h2 className="z-[1] mt-10 bg-gradient-to-br from-[#03CDFF]  to-[#09E8CE] bg-clip-text  font-montserrat text-4xl text-transparent sm:my-5 sm:text-2xl">
+      <h2 className="mt-10 font-montserrat text-4xl text-white sm:my-5 sm:text-2xl">
         My Skills
       </h2>
 
