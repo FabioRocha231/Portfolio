@@ -1,7 +1,7 @@
 import { memo, useEffect, useState } from 'react'
 
 import { NavBarButtons } from './NavBarButtons'
-import { NavBarLogo } from './NavBarLogo'
+import NavBarLogo from './NavBarLogo'
 
 interface Props {
   isOpen: boolean
@@ -19,13 +19,13 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
   return (
     <>
       {shouldRender && (
-        <article
+        <nav
           style={{
             animation: `${isOpen ? 'fadeIn' : 'fadeOut'} .5s`
           }}
           className="glass fixed inset-0 z-[4]"
         >
-          <article className="overlay" onClick={() => setIsOpen(false)} />
+          <div className="overlay" onClick={() => setIsOpen(false)} />
           <aside
             style={{
               width: 'clamp(300px, 30vw, 600px)',
@@ -33,18 +33,21 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
             }}
             className="absolute right-0 z-[5] h-full max-w-full bg-playButton"
           >
-            <article className="flex h-full w-full flex-col items-center justify-center gap-y-8 bg-[#274a53]">
-              <p
+            <div
+              className="flex h-full w-full flex-col items-center
+              justify-center gap-y-8 rounded-l-xl bg-[#274a53]"
+            >
+              <span
                 onClick={() => setIsOpen(false)}
                 className="absolute top-10 left-10 cursor-pointer font-black text-white"
               >
                 X
-              </p>
+              </span>
               <NavBarLogo />
-              <NavBarButtons className="flex flex-col items-center justify-center gap-y-8" />
-            </article>
+              <NavBarButtons isMobileNav />
+            </div>
           </aside>
-        </article>
+        </nav>
       )}
     </>
   )

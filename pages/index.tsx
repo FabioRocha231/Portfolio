@@ -1,15 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next'
 
-import {
-  AboutMe,
-  BlockchainExperience,
-  Footer,
-  Header,
-  MyRepos,
-  MySkill,
-  NavBar,
-  SocialLinks
-} from '../components'
+import { NavBar } from '../components'
 import { GitApi } from '../core/class/apis/gitApi'
 import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
 import { Meta } from '../layouts/Meta'
@@ -25,18 +16,7 @@ const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
         />
       }
     >
-      <section className="bg-black">
-        <NavBar />
-        <main className="flex w-full flex-col items-center justify-center">
-          <Header />
-          <AboutMe id={'about'} />
-          <MySkill id={'skills'} />
-          <BlockchainExperience />
-          <MyRepos result={result} />
-          <SocialLinks />
-          <Footer />
-        </main>
-      </section>
+      <NavBar />
     </Main>
   )
 }

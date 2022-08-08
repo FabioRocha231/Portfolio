@@ -17,7 +17,7 @@ export const Header = () => {
             height={300}
             className="rounded-full "
             objectFit="cover"
-            alt="Heade image"
+            alt="Header image"
           />
         </aside>
       </article>

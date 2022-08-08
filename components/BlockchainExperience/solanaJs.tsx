@@ -45,12 +45,13 @@ export const SolanaJs = ({ setSolanaClick, solanaClick }: PropsWaxJs) => {
               href="https://solana.com/"
               target={'_blank'}
               rel={'noreferrer'}
-              className={'hover:snimate-pulse text-blue-500/70 underline'}
+              className={'text-blue-500/70 underline hover:animate-pulse'}
             >
               Solana
             </a>{' '}
             implemented authentication and transfer flows together with
-            SmartContracts
+            SmartContracts and experience with creating Backend servers to Smart
+            Contracts.
           </p>
         </motion.aside>
       )}

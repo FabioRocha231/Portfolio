@@ -1,31 +1,36 @@
-import { Button } from '../Button'
+import Link from 'next/link'
+import { useMemo } from 'react'
 
-type PropsNavBarButtons = {
-  className: string
+interface INavBarButtonsParam {
+  isMobileNav: boolean
 }
-export const NavBarButtons = ({ className }: PropsNavBarButtons) => {
+
+export const NavBarButtons = ({ isMobileNav }: INavBarButtonsParam) => {
+  const navItens = ['about', 'skilss', 'Blockchain', 'contact']
+  const navButtons = useMemo(
+    () =>
+      navItens.map((item, i) => {
+        return (
+          <li key={i}>
+            <Link href="#about">
+              <a
+                className="font-montserrat text-lg text-white transition-all duration-75
+                hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
+              >
+                {item}
+              </a>
+            </Link>
+          </li>
+        )
+      }),
+    []
+  )
   return (
-    <aside
-      className={`flex flex-row justify-center items-center gap-x-9 ${className}`}
+    <ul
+      className={`${isMobileNav ? 'flex flex-col' : 'flex flex-row md:hidden'}
+        items-center justify-center gap-x-9`}
     >
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Repositories"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="About"
-        href="#about"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Contact"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Skils"
-        href="#skills"
-      />
-    </aside>
+      {navButtons}
+    </ul>
   )
 }
