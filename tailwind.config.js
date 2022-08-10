@@ -21,7 +21,8 @@ module.exports = {
       xlm: { min: '1279px' },
       // => @media (min-width: 1279px) { ... }
       lg: { max: '1024px' },
-      // => @media (max-width: 1023px) { ... }
+      mlg: { min: '1025px' },
+      // => @media (max-width: 1024px) { ... }
       hd: { max: '940px' },
       // => @media (max-width: 900px) { ... }
 

@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
   return (
     <>
       {shouldRender && (
-        <nav
+        <div
           style={{
             animation: `${isOpen ? 'fadeIn' : 'fadeOut'} .5s`
           }}
@@ -47,7 +47,7 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
               <NavBarButtons isMobileNav />
             </div>
           </aside>
-        </nav>
+        </div>
       )}
     </>
   )

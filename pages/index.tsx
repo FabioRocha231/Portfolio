@@ -1,7 +1,8 @@
 import type { GetStaticProps, NextPage } from 'next'
 
-import { NavBar } from '../components'
-import { GitApi } from '../core/class/apis/gitApi'
+import { Greetings } from '../components'
+import { NavBar } from '../components/NavBar'
+// import { GitApi } from '../core/class/apis/gitApi'
 import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
 import { Meta } from '../layouts/Meta'
 import { Main } from '../templates'
@@ -16,20 +17,23 @@ const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
         />
       }
     >
-      <NavBar />
+      <main className="flex h-screen flex-col">
+        <NavBar />
+        <Greetings />
+      </main>
     </Main>
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const { MyReposGetter } = new GitApi()
-  const result = await MyReposGetter()
-  return {
-    props: {
-      result
-    },
-    revalidate: 60 // 1 minuto || 60scs
-  }
-}
+// export const getStaticProps: GetStaticProps = async () => {
+//  const { MyReposGetter } = new GitApi()
+//  const result = await MyReposGetter()
+//  return {
+//    props: {
+//      result
+//    },
+//    revalidate: 60 // 1 minuto || 60scs
+//  }
+// }
 
 export default Home

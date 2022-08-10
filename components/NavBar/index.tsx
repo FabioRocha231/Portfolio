@@ -8,18 +8,21 @@ import NavBarLogo from './NavBarLogo'
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className={'flex h-20 flex-row items-center justify-evenly bg-black'}>
+    <header
+      className={'flex h-16 flex-row items-center justify-evenly bg-black'}
+    >
       <NavBarLogo />
-      <NavBarButtons />
-
-      <nav
-        className="cursor-pointer smd:hidden"
+      <div className="lg:hidden">
+        <NavBarButtons />
+      </div>
+      <span
+        className="cursor-pointer mlg:hidden"
         onClick={() => setIsOpen(true)}
       >
-        <GiHamburgerMenu size={'2rem'} color={'#61dafb'} />
-      </nav>
+        <GiHamburgerMenu size={'1.5rem'} color={'#61dafb'} />
+      </span>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
-    </nav>
+    </header>
   )
 }
 

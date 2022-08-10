@@ -1,12 +1,8 @@
 import Link from 'next/link'
 import { useMemo } from 'react'
 
-interface INavBarButtonsParam {
-  isMobileNav: boolean
-}
-
-export const NavBarButtons = ({ isMobileNav }: INavBarButtonsParam) => {
-  const navItens = ['about', 'skilss', 'Blockchain', 'contact']
+export const NavBarButtons = () => {
+  const navItens = ['Sobre', 'Skils', 'CV', 'Contato']
   const navButtons = useMemo(
     () =>
       navItens.map((item, i) => {
@@ -14,8 +10,8 @@ export const NavBarButtons = ({ isMobileNav }: INavBarButtonsParam) => {
           <li key={i}>
             <Link href="#about">
               <a
-                className="font-montserrat text-lg text-white transition-all duration-75
-                hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
+                className="text-center font-montserrat text-base text-slate-100 transition-all duration-75
+                hover:border-b-2 hover:border-cyan-400"
               >
                 {item}
               </a>
@@ -26,10 +22,7 @@ export const NavBarButtons = ({ isMobileNav }: INavBarButtonsParam) => {
     []
   )
   return (
-    <ul
-      className={`${isMobileNav ? 'flex flex-col' : 'flex flex-row md:hidden'}
-        items-center justify-center gap-x-9`}
-    >
+    <ul className="flex flex-row items-center justify-center gap-x-9 lg:flex-col">
       {navButtons}
     </ul>
   )
