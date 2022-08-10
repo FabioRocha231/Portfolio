@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { memo } from 'react'
 import { DiReact } from 'react-icons/di'
 
@@ -9,9 +10,11 @@ const NavBarLogo = () => {
         size={'2rem'}
         color={'#61dafb'}
       />
-      <p className="font-montserrat text-lg text-slate-100">
-        <span className="text-[#61dafb]">Fabio</span> HR Filho
-      </p>
+      <Link href={'/'}>
+        <a className="font-montserrat text-lg text-slate-100">
+          <span className="text-[#61dafb]">Fabio</span> HR Filho
+        </a>
+      </Link>
     </div>
   )
 }
