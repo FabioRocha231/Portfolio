@@ -38,9 +38,9 @@ module.exports = {
 
       sm: { max: '639px' },
       // => @media (max-width: 639px) { ... }
-      xsm: { max: '390px' },
+      xs: { max: '420px' },
       // => @media (max-width: 639px) { ... }
-      xs: { min: '390px' }
+      xsm: { min: '420px' }
       // => @media (min-width: 639px) { ... }
     },
     display: ['Poppins', 'system-ui', 'sans-serif'],

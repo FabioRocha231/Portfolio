@@ -8,9 +8,7 @@ import NavBarLogo from './NavBarLogo'
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header
-      className={'flex h-16 flex-row items-center justify-evenly bg-black'}
-    >
+    <header className="flex h-16 min-h-max flex-row items-center justify-evenly bg-black">
       <NavBarLogo />
       <div className="lg:hidden">
         <NavBarButtons />
