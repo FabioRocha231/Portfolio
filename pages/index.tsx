@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { NextPage } from 'next'
 
 import { Greetings } from '../components'
 import { NavBar } from '../components/NavBar'
@@ -7,7 +7,7 @@ import { GitApiResponseTypes } from '../core/types/gitApiReponseTypes'
 import { Meta } from '../layouts/Meta'
 import { Main } from '../templates'
 
-const Home: NextPage<{ result: GitApiResponseTypes[] }> = ({ result }) => {
+const Home: NextPage<{ result: GitApiResponseTypes[] }> = () => {
   return (
     <Main
       meta={
