@@ -44,7 +44,7 @@ const MobileNav = ({ isOpen, setIsOpen }: Props) => {
                 X
               </span>
               <NavBarLogo />
-              <NavBarButtons isMobileNav />
+              <NavBarButtons />
             </div>
           </aside>
         </div>
