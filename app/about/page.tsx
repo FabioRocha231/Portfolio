@@ -2,7 +2,7 @@ import { CommingSoon } from "@/components/CommingSoon";
 import NavBar from "@/components/NavBar";
 import { NextPage } from "next";
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   return (
     <main className="flex h-screen flex-col">
       <NavBar />
@@ -11,4 +11,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Page;

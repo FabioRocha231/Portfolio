@@ -1,16 +1,22 @@
 "use client";
-import type { NextPage } from "next";
-import { GitApiResponseTypes } from "../core/types/gitApiReponseTypes";
 import NavBar from "@/components/NavBar";
 import { Greetings } from "@/components/Greetings";
+import Head from "next/head";
 
-const Home: NextPage<{ result: GitApiResponseTypes[] }> = () => {
+const HomePage = () => {
   return (
-    <main className="flex h-screen flex-col">
-      <NavBar />
-      <Greetings />
-    </main>
+    <>
+      <Head>
+        <title>Fabio HR Filho</title>
+        <meta name="description" content="portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <main className="flex h-screen flex-col">
+        <NavBar />
+        <Greetings />
+      </main>
+    </>
   );
 };
 
-export default Home;
+export default HomePage;
