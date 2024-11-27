@@ -1,22 +1,22 @@
-import Link from 'next/link'
-import { memo } from 'react'
-import { DiReact } from 'react-icons/di'
+import Link from "next/link";
+import { memo } from "react";
+import { DiReact } from "react-icons/di";
 
 const NavBarLogo = () => {
   return (
     <div className="flex flex-row items-center justify-center">
       <DiReact
         className="animate-spin animate-spin"
-        size={'2rem'}
-        color={'#61dafb'}
+        size={"2rem"}
+        color={"#61dafb"}
       />
-      <Link href={'/'}>
-        <a className="font-montserrat text-lg text-slate-100">
+      <Link href={"/"}>
+        <p className="font-montserrat text-lg text-slate-100">
           <span className="text-[#61dafb]">Fabio</span> HR Filho
-        </a>
+        </p>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default memo(NavBarLogo)
+export default memo(NavBarLogo);

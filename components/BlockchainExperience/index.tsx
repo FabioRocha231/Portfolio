@@ -1,10 +1,12 @@
-import { memo, useState } from 'react'
+"use client";
 
-import { SolanaJs } from './solanaJs'
-import { WaxJs } from './waxJs'
+import { memo, useState } from "react";
+
+import { SolanaJs } from "./solanaJs";
+import { WaxJs } from "./waxJs";
 
 export const BlockchainExperience = () => {
-  const [cryptoClick, setCryptoClick] = useState<boolean>(false)
+  const [cryptoClick, setCryptoClick] = useState<boolean>(false);
   return (
     <section className="relative flex w-full flex-col items-center justify-center">
       <h2 className="mt-10 text-4xl text-white sm:mt-10 sm:mb-5 sm:text-2xl">
@@ -15,7 +17,7 @@ export const BlockchainExperience = () => {
         <SolanaJs solanaClick={cryptoClick} setSolanaClick={setCryptoClick} />
       </article>
     </section>
-  )
-}
+  );
+};
 
-export default memo(BlockchainExperience)
+export default memo(BlockchainExperience);

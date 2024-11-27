@@ -1,17 +1,17 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { NextSeo } from 'next-seo'
+import Head from "next/head";
 
-import { AppConfig } from '../utils/AppConfig'
+import { NextSeo } from "next-seo";
+import { AppConfig } from "@/utils";
+import { useRouter } from "next/router";
 
 type IMetaProps = {
-  title: string
-  description: string
-  canonical?: string
-}
+  title: string;
+  description: string;
+  canonical?: string;
+};
 
 const Meta = (props: IMetaProps) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -43,11 +43,11 @@ const Meta = (props: IMetaProps) => {
           description: props.description,
           url: props.canonical,
           locale: AppConfig.locale,
-          site_name: AppConfig.site_name
+          site_name: AppConfig.site_name,
         }}
       />
     </>
-  )
-}
+  );
+};
 
-export { Meta }
+export { Meta };
