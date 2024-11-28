@@ -1,11 +1,11 @@
-import { memo } from 'react'
+import { memo } from "react";
 
-import { Icons } from './Icons'
-import MobileIcons from './MobileIcons'
+import { Icons } from "./Icons";
+import MobileIcons from "./MobileIcons";
 
 type MySkillsProps = {
-  id?: string
-}
+  id?: string;
+};
 export const MySkill = ({ id }: MySkillsProps) => {
   return (
     <section
@@ -16,21 +16,15 @@ export const MySkill = ({ id }: MySkillsProps) => {
         My Skills
       </h2>
 
-      <Icons
-        className="mt-10 mb-20 grid grid-cols-6 gap-10 xl:grid-cols-4  mdlg:grid-cols-2 xsm:hidden"
-        iconWrapperSize="w-[150px] h-[150px]"
-      />
+      <Icons className="mt-10 mb-20 grid grid-cols-6 gap-10 xl:grid-cols-4  mdlg:grid-cols-2 xsm:hidden" />
 
       <article className="flex h-80 flex-row items-center justify-center bg-black sm:h-40 xs:hidden">
         <MobileIcons>
-          <Icons
-            className="flex flex-row gap-x-10"
-            iconWrapperSize=" w-[90px] h-[90px]"
-          />
+          <Icons className="flex flex-row gap-x-10" />
         </MobileIcons>
       </article>
     </section>
-  )
-}
+  );
+};
 
-export default memo(MySkill)
+export default memo(MySkill);
