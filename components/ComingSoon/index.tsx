@@ -1,4 +1,4 @@
-export const CommingSoon = () => {
+export const ComingSoon = () => {
   return (
     <section className="h-screen bg-black">
       <div className="container mx-auto flex h-full w-full items-center justify-center px-8">
@@ -12,5 +12,5 @@ export const CommingSoon = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
