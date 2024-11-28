@@ -22,6 +22,7 @@ import { HtmlIcon } from "../atoms/Icons/Html";
 import { CssIcon } from "../atoms/Icons/Css";
 import { JsIcon } from "../atoms/Icons/Js";
 import { GitIcon } from "../atoms/Icons/Git";
+import { TsIcon } from "../atoms/Icons/Ts";
 
 export const Icons = ({ className }: IconsProps) => {
   return (
@@ -30,10 +31,7 @@ export const Icons = ({ className }: IconsProps) => {
       <CssIcon />
       <JsIcon />
       <GitIcon />
-      <MotionIconComponent
-        Icon={() => <SiTypescript size={"5rem"} color={"#08678C"} />}
-        className={`bg-white z-[1] rounded-lg shadow-lg shadow-white/25 cursor-pointer ${ICON_WRAPPER_SIZE}`}
-      />
+      <TsIcon />
       <MotionIconComponent
         Icon={() => <DiNodejsSmall size={"5rem"} color={"#94BF6E"} />}
         className={`bg-white z-[1] rounded-lg shadow-lg shadow-white/25 cursor-pointer ${ICON_WRAPPER_SIZE}`}
