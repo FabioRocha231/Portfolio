@@ -30,8 +30,8 @@ export const TextAndRedirect = () => {
           text-slate-500 lg:text-white xs:text-lg"
         >
           Atuo como Desenvolvedor Fullstack à 5 anos, com experiência em React,
-          React Native, Next.js, Node.js e TypeScript. Se ficou interessado(a) e
-          deseja saber mais {""}
+          React Native, Next.js, Node.js TypeScript e Golang. Se ficou
+          interessado(a) e deseja saber mais {""}
           <Redirect to="/about" content="Sobre mim" />
           {""} confira minhas {""}
           <Redirect to="/skills" content="habilidades" />, {""} baixando meu{" "}
