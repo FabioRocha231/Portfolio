@@ -7,7 +7,7 @@ export const TextAndRedirect = () => {
     "Fullstack developer",
     "Front-End developer",
     "Back-end developer",
-    "Mobile Developer",
+    "Mobile developer",
   ];
   return (
     <div className="flex h-full flex-col items-center justify-center">
