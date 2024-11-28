@@ -1,4 +1,4 @@
-import { MotionIconComponent } from "@/components/MySkills/IconComponent";
+import { MotionIconComponent } from "@/components/MySkills/MotionIconComponent";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { DiCss3Full } from "react-icons/di";
 

@@ -15,7 +15,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import { MotionIconComponent } from "./IconComponent";
+import { MotionIconComponent } from "./MotionIconComponent";
 import { IconsProps } from "@/core/types/iconProps";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { HtmlIcon } from "../atoms/Icons/HtmlIcon";
