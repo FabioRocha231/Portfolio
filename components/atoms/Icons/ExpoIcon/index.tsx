@@ -1,4 +1,4 @@
-import { MotionIconComponent } from "@/components/MySkills/MotionIconComponent";
+import { MotionIconComponent } from "@/components/atoms/MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { SiExpo } from "react-icons/si";
 
