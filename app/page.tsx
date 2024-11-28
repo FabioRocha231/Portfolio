@@ -11,10 +11,8 @@ const HomePage = () => {
         <meta name="description" content="portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="flex h-screen flex-col">
-        <NavBar />
-        <Greetings />
-      </main>
+
+      <Greetings />
     </>
   );
 };
