@@ -18,9 +18,10 @@ import {
 import { MotionIconComponent } from "./MotionIconComponent";
 import { IconsProps } from "@/core/types/iconProps";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
-import { HtmlIcon } from "../atoms/Icons/HtmlIcon";
-import { CssIcon } from "../atoms/Icons/CssIcon";
-import { JsIcon } from "../atoms/Icons/JsIcon";
+import { HtmlIcon } from "../atoms/Icons/Html";
+import { CssIcon } from "../atoms/Icons/Css";
+import { JsIcon } from "../atoms/Icons/Js";
+import { GitIcon } from "../atoms/Icons/Git";
 
 export const Icons = ({ className }: IconsProps) => {
   return (
@@ -28,10 +29,7 @@ export const Icons = ({ className }: IconsProps) => {
       <HtmlIcon />
       <CssIcon />
       <JsIcon />
-      <MotionIconComponent
-        Icon={() => <DiGit size={"5rem"} color={"#D9183B"} />}
-        className={`bg-white z-[1] rounded-lg shadow-lg shadow-white/25 cursor-pointer ${ICON_WRAPPER_SIZE}`}
-      />
+      <GitIcon />
       <MotionIconComponent
         Icon={() => <SiTypescript size={"5rem"} color={"#08678C"} />}
         className={`bg-white z-[1] rounded-lg shadow-lg shadow-white/25 cursor-pointer ${ICON_WRAPPER_SIZE}`}
