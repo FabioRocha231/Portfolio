@@ -1,5 +1,4 @@
 "use client";
-import NavBar from "@/components/NavBar";
 import { Greetings } from "@/components/Greetings";
 import Head from "next/head";
 
