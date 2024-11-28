@@ -1,6 +1,6 @@
+import { GitApiResponseTypes } from "@/core/types/gitApiReponseTypes";
+import { IGitApi } from "@/core/protocols/gitApi";
 import axios from "axios";
-import { IGitApi } from "../../protocols/gitApi";
-import { GitApiResponseTypes } from "../../types/gitApiReponseTypes";
 import { ErrorHandler } from "../handlers/errorHanlder";
 
 export class GitApi implements IGitApi {

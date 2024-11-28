@@ -1,26 +1,27 @@
-import { memo, useState } from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi'
+"use client";
+import { memo, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import MobileNav from "./mobileNav";
+import NavBarLogo from "./NavBarLogo";
+import { NavBarButtons } from "./NavBarButtons";
 
-import MobileNav from './mobileNav'
-import { NavBarButtons } from './NavBarButtons'
-import { NavBarLogo } from './NavBarLogo'
-
-export const NavBar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className={'flex h-20 flex-row items-center justify-evenly bg-black'}>
+    <header className="flex h-16 min-h-max flex-row items-center justify-evenly bg-black">
       <NavBarLogo />
-      <NavBarButtons className="md:hidden" />
-
-      <aside
-        className="cursor-pointer smd:hidden"
+      <div className="lg:hidden">
+        <NavBarButtons />
+      </div>
+      <span
+        className="cursor-pointer mlg:hidden"
         onClick={() => setIsOpen(true)}
       >
-        <GiHamburgerMenu size={'2rem'} color={'#61dafb'} />
-      </aside>
+        <GiHamburgerMenu size={"1.5rem"} color={"#61dafb"} />
+      </span>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
-    </nav>
-  )
-}
+    </header>
+  );
+};
 
-export default memo(NavBar)
+export default memo(NavBar);

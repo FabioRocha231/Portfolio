@@ -1,31 +1,29 @@
-import { Button } from '../Button'
+import Link from "next/link";
+import { useMemo } from "react";
 
-type PropsNavBarButtons = {
-  className: string
-}
-export const NavBarButtons = ({ className }: PropsNavBarButtons) => {
+export const NavBarButtons = () => {
+  const navItens = ["Sobre", "Skils", "CV", "Contato"];
+  const navButtons = useMemo(
+    () =>
+      navItens.map((item, i) => {
+        return (
+          <li key={i}>
+            <Link href="#about">
+              <p
+                className="text-center font-montserrat text-base text-slate-100 transition-all duration-75
+                hover:border-b-2 hover:border-cyan-400"
+              >
+                {item}
+              </p>
+            </Link>
+          </li>
+        );
+      }),
+    []
+  );
   return (
-    <aside
-      className={`flex flex-row justify-center items-center gap-x-9 ${className}`}
-    >
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Repositories"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="About"
-        href="#about"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Contact"
-      />
-      <Button
-        className="p-1 font-montserrat text-lg transition-all duration-75 hover:animate-pulse hover:border-b-2 hover:border-cyan-400"
-        content="Skils"
-        href="#skills"
-      />
-    </aside>
-  )
-}
+    <ul className="flex flex-row items-center justify-center gap-x-9 lg:flex-col">
+      {navButtons}
+    </ul>
+  );
+};

@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { Infos } from './infos'
+import { Infos } from "./infos";
 
 type AboutMeProps = {
-  id?: string
-}
+  id?: string;
+};
 
 export const AboutMe = ({ id }: AboutMeProps) => {
   return (
@@ -16,15 +16,15 @@ export const AboutMe = ({ id }: AboutMeProps) => {
       <article className="my-10 flex flex-row items-center justify-evenly gap-x-80 xl:gap-x-36 lg:gap-x-7 hd:flex-col-reverse hd:px-4 sm:my-5">
         <aside className="hd:my-10">
           <Image
-            src={'/images/sticker.svg'}
-            width={'400px'}
-            height={'400px'}
-            alt={'Programmer programming'}
+            src={"/images/sticker.svg"}
+            width={400}
+            height={400}
+            alt={"Programmer programming"}
           />
         </aside>
 
         <Infos />
       </article>
     </section>
-  )
-}
+  );
+};

@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { memo } from 'react'
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { memo } from "react";
 
 export type PropsWaxJs = {
-  solanaClick: boolean
-  setSolanaClick: (solanaClick: boolean) => void
-}
+  solanaClick: boolean;
+  setSolanaClick: (solanaClick: boolean) => void;
+};
 
 export const SolanaJs = ({ setSolanaClick, solanaClick }: PropsWaxJs) => {
   return (
     <article
       className={`flex flex-col gap-x-32 transition-all duration-300 items-center justify-center ${
-        solanaClick ? 'mb-20' : ''
+        solanaClick ? "mb-20" : ""
       }`}
     >
       <motion.aside
@@ -39,23 +39,24 @@ export const SolanaJs = ({ setSolanaClick, solanaClick }: PropsWaxJs) => {
           <h3 className="mt-10 text-center font-montserrat text-lg font-bold text-white sm:text-base">
             Solana Blockchain
           </h3>
-          <p className="my-10 p-4 text-center font-montserrat text-lg font-semibold text-white sm:text-base">
-            starting to venture with{' '}
+          <article className="my-10 p-4 text-center font-montserrat text-lg font-semibold text-white sm:text-base">
+            starting to venture with{" "}
             <a
               href="https://solana.com/"
-              target={'_blank'}
-              rel={'noreferrer'}
-              className={'hover:snimate-pulse text-blue-500/70 underline'}
+              target={"_blank"}
+              rel={"noreferrer"}
+              className={"text-blue-500/70 underline hover:animate-pulse"}
             >
               Solana
-            </a>{' '}
+            </a>{" "}
             implemented authentication and transfer flows together with
-            SmartContracts
-          </p>
+            SmartContracts and experience with creating Backend servers to Smart
+            Contracts.
+          </article>
         </motion.aside>
       )}
     </article>
-  )
-}
+  );
+};
 
-export default memo(SolanaJs)
+export default memo(SolanaJs);
