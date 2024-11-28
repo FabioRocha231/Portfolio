@@ -1,4 +1,4 @@
-import { MotionIconComponent } from "@/components/atoms/MotionIcon";
+import { MotionIconComponent } from "../../MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { SiExpress } from "react-icons/si";
 
@@ -10,3 +10,7 @@ export const ExpressIcon = () => {
     />
   );
 };
+
+ExpressIcon.displayName = "ExpressIcon";
+
+export default ExpressIcon;

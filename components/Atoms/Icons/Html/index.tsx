@@ -1,5 +1,6 @@
-import { MotionIconComponent } from "@/components/atoms/MotionIcon";
+import { MotionIconComponent } from "../../MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
+import exp from "constants";
 import { DiHtml5 } from "react-icons/di";
 
 export const HtmlIcon = () => {
@@ -10,3 +11,5 @@ export const HtmlIcon = () => {
     />
   );
 };
+HtmlIcon.displayName = "HTMLIcon";
+export default HtmlIcon;

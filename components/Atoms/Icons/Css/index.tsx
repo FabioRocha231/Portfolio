@@ -1,6 +1,6 @@
-import { MotionIconComponent } from "@/components/atoms/MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { DiCss3Full } from "react-icons/di";
+import { MotionIconComponent } from "../../MotionIcon";
 
 export const CssIcon = () => {
   return (
@@ -10,3 +10,7 @@ export const CssIcon = () => {
     />
   );
 };
+
+CssIcon.displayName = "CssIcon";
+
+export default CssIcon;

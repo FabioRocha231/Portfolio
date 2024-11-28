@@ -1,6 +1,6 @@
-import { MotionIconComponent } from "@/components/atoms/MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { SiExpo } from "react-icons/si";
+import { MotionIconComponent } from "../../MotionIcon";
 
 export const ExpoIcon = () => {
   return (
@@ -16,3 +16,5 @@ export const ExpoIcon = () => {
     />
   );
 };
+ExpoIcon.displayName = "ExpoIcon";
+export default ExpoIcon;

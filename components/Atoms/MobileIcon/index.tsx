@@ -1,25 +1,25 @@
-import { motion, useAnimation, useMotionValue } from 'framer-motion'
-import { memo, ReactNode } from 'react'
+import { motion, useAnimation, useMotionValue } from "framer-motion";
+import { memo, ReactNode } from "react";
 // import s from "./team-section.module.css";
 
 interface Props {
-  children: ReactNode
-  className?: string
-  stiffness?: number
-  damping?: number
+  children: ReactNode;
+  className?: string;
+  stiffness?: number;
+  damping?: number;
   /* as pixels */
-  scrollerWidth?: number
-  hasScroller?: boolean
+  scrollerWidth?: number;
+  hasScroller?: boolean;
 }
 
-const MobileIcons = ({
+export const MobileIcons = ({
   children,
   className,
   stiffness = 50,
-  damping = 10
+  damping = 10,
 }: Props) => {
-  const x = useMotionValue(0)
-  const animation = useAnimation()
+  const x = useMotionValue(0);
+  const animation = useAnimation();
   return (
     <>
       <div className={`${className} flex flex-row items-center`}>
@@ -30,11 +30,11 @@ const MobileIcons = ({
             style={{ x }}
             animate={animation}
             transition={{
-              x: { type: 'spring', stiffness, damping }
+              x: { type: "spring", stiffness, damping },
             }}
             dragConstraints={{
               left: -600,
-              right: 600
+              right: 600,
             }}
           >
             {children}
@@ -42,7 +42,5 @@ const MobileIcons = ({
         </div>
       </div>
     </>
-  )
-}
-
-export default memo(MobileIcons)
+  );
+};

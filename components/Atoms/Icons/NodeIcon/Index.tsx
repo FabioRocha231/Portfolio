@@ -1,4 +1,4 @@
-import { MotionIconComponent } from "@/components/atoms/MotionIcon";
+import { MotionIconComponent } from "../../MotionIcon";
 import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { DiNodejsSmall } from "react-icons/di";
 
@@ -10,3 +10,5 @@ export const NodeIcon = () => {
     />
   );
 };
+NodeIcon.displayName = "NodeIcon";
+export default NodeIcon;

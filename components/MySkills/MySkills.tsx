@@ -1,12 +1,12 @@
 import { memo } from "react";
 
-import { Icons } from "./Icons.1";
-import MobileIcons from "./MobileIcons";
+import { Icons } from "../Organisms/Icons";
+import { MobileIcons } from "../Atoms/MobileIcon";
 
 type MySkillsProps = {
   id?: string;
 };
-export const MySkill = ({ id }: MySkillsProps) => {
+export const MySkills = ({ id }: MySkillsProps) => {
   return (
     <section
       id={id}
@@ -27,4 +27,4 @@ export const MySkill = ({ id }: MySkillsProps) => {
   );
 };
 
-export default memo(MySkill);
+export default memo(MySkills);
