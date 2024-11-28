@@ -29,14 +29,16 @@ export const TextAndRedirect = () => {
           className="text-xl font-medium
           text-slate-500 lg:text-white xs:text-lg"
         >
-          Desenolvedor Fullstack com experiencia em React, React native, NextJs,
-          NodeJs e Typescript. Se ficou interesasdo(a) e queira saber mais {""}
-          <Redirect to="/about" content="Sobre" />
-          {""} mim pode estar checando minhas {""}
-          <Redirect to="/skills" content="Skills" />, {""} baixando meu {""}
-          <Redirect to="/curriculum" content="CV" />
+          Desenvolvedor Fullstack com experiência em React, React Native,
+          Next.js, Node.js e TypeScript. Se ficou interessado(a) e deseja saber
+          mais {""}
+          <Redirect to="/about" content="Sobre mim" />
+          {""} confira minhas {""}
+          <Redirect to="/skills" content="habilidades" />, {""} baixando meu{" "}
+          {""}
+          <Redirect to="/curriculum" content="curriculo" />
           {""} ou entrando em {""}
-          <Redirect to="/contact" content="Contato" />
+          <Redirect to="/contact" content="contato" />
           {""} comigo! Obrigado pela sua visita.
         </p>
       </section>
