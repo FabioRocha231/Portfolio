@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import { Icons } from "./Icons";
+import { Icons } from "./Icons.1";
 import MobileIcons from "./MobileIcons";
 
 type MySkillsProps = {
