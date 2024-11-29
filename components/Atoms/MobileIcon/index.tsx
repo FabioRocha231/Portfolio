@@ -11,7 +11,12 @@ interface Props extends HTMLMotionProps<"div"> {
   stiffness?: number;
   damping?: number;
 }
-export const MobileIcons = ({ damping, stiffness, ...props }: Props) => {
+export const MobileIcons = ({
+  damping,
+  stiffness,
+  children,
+  ...props
+}: Props) => {
   const x = useMotionValue(0);
   const animation = useAnimation();
   return (
@@ -32,7 +37,7 @@ export const MobileIcons = ({ damping, stiffness, ...props }: Props) => {
             }}
             {...props}
           >
-            {props.children}
+            {children}
           </motion.div>
         </div>
       </div>
