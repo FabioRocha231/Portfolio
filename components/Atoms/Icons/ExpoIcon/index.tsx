@@ -2,9 +2,10 @@ import { ICON_WRAPPER_SIZE } from "@/constants/iconWrapperSize";
 import { SiExpo } from "react-icons/si";
 import { MotionIconComponent } from "../../MotionIcon";
 
-export const ExpoIcon = () => {
+export const ExpoIcon = ({ key }: React.ComponentProps<"div">) => {
   return (
     <MotionIconComponent
+      key={key}
       Icon={() => (
         <SiExpo
           size={"5rem"}
