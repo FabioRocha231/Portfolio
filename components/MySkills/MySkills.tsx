@@ -1,5 +1,3 @@
-import { memo } from "react";
-
 import { Icons } from "../Organisms/Icons";
 import { MobileIcons } from "../Atoms/MobileIcon";
 
@@ -26,5 +24,3 @@ export const MySkills = ({ id }: MySkillsProps) => {
     </section>
   );
 };
-
-export default memo(MySkills);
