@@ -13,12 +13,12 @@ const NavBar = () => {
       <div className="lg:hidden">
         <NavBarButtons />
       </div>
-      <span
+      <div
         className="cursor-pointer mlg:hidden"
         onClick={() => setIsOpen(true)}
       >
         <GiHamburgerMenu size={"1.5rem"} color={"#61dafb"} />
-      </span>
+      </div>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
   );

@@ -1,14 +1,9 @@
-import { CommingSoon } from "@/components/CommingSoon";
-import NavBar from "@/components/NavBar";
+"use client";
+import { MySkills } from "@/components/MySkills/MySkills";
 import { NextPage } from "next";
 
 const Page: NextPage = () => {
-  return (
-    <main className="flex h-screen flex-col">
-      <NavBar />
-      <CommingSoon />
-    </main>
-  );
+  return <MySkills />;
 };
 
 export default Page;

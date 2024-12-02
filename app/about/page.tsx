@@ -1,14 +1,8 @@
-import { CommingSoon } from "@/components/CommingSoon";
-import NavBar from "@/components/NavBar";
+import { ComingSoon } from "@/components/ComingSoon";
 import { NextPage } from "next";
 
 const Page: NextPage = () => {
-  return (
-    <main className="flex h-screen flex-col">
-      <NavBar />
-      <CommingSoon />
-    </main>
-  );
+  return <ComingSoon />;
 };
 
 export default Page;

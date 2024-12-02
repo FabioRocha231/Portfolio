@@ -7,7 +7,7 @@ export const TextAndRedirect = () => {
     "Fullstack developer",
     "Front-End developer",
     "Back-end developer",
-    "Mobile Developer",
+    "Mobile developer",
   ];
   return (
     <div className="flex h-full flex-col items-center justify-center">
@@ -30,16 +30,16 @@ export const TextAndRedirect = () => {
           text-slate-500 lg:text-white xs:text-lg"
         >
           Atuo como Desenvolvedor Fullstack há 5 anos, com experiência em React,
-          React Native, Next.js, Node.js TypeScript e Golang. Se ficou
+          React Native, Next.js, Node.js TypeScript e Golang. Ficou
           interessado(a) e deseja saber mais {""}
           <Redirect to="/about" content="Sobre mim" />
-          {""} confira minhas {""}
-          <Redirect to="/skills" content="habilidades" />, {""} baixando meu{" "}
-          {""}
-          <Redirect to="/curriculum" content="curriculo" />
-          {""} ou entrando em {""}
+          {""}? Confira minhas {""}
+          <Redirect to="/skills" content="habilidades" />, {""} ou faça download
+          meu {""}
+          <Redirect to="/curriculum" content="curriculum" />
+          {""} ou entre em {""}
           <Redirect to="/contact" content="contato" />
-          {""} comigo! Obrigado pela sua visita.
+          {""}! Obrigado pela sua visita.
         </p>
       </section>
     </div>
