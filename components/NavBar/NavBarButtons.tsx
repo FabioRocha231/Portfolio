@@ -2,8 +2,8 @@ import Link from "next/link";
 import { useMemo } from "react";
 
 export const NavBarButtons = () => {
-  const navItens = ["Sobre", "Skils", "CV", "Contato"];
-  const navPaths = ["about", "skills", "curriculum", "contact"];
+  const navItens = ["Sobre", "CV", "Contato"];
+  const navPaths = ["about", "curriculum", "contact"];
   const navButtons = useMemo(
     () =>
       navItens.map((item, i) => {
