@@ -2,29 +2,36 @@ import { ReactTyped } from "react-typed";
 
 import Redirect from "./Redirect";
 
-export const TextAndRedirect = () => {
-  const strings = [
-    "Fullstack developer",
-    "Front-End developer",
-    "Back-end developer",
-    "Mobile developer",
-  ];
+const strings = [
+  "Fullstack developer",
+  "DevOps",
+  "AWS",
+  "Kubernets",
+  "Golang",
+  "React",
+  "React Native",
+  "Next.js",
+  "Node.js",
+  "Typescript",
+];
+
+export const GreetingsAndRedirects = () => {
   return (
-    <div className="flex h-full flex-col items-center justify-center">
-      <section className="flex self-start w-[650px] flex-col 2xl:w-[500px] lg:w-full">
+    <section className="flex flex-col h-full items-center justify-center flex-1 bg-slate-100 px-20 lg:hidden">
+      <article className="flex self-start w-[650px] flex-col 2xl:w-[500px] lg:w-full">
         <h1 className="text-5xl text-black lg:text-5xl lg:text-white sm:text-3xl xs:text-2xl ">
-          Ola, me chamo Fabio Rocha
+          Olá, me chamo Fabio Rocha
         </h1>
         <ReactTyped
           strings={strings}
           typeSpeed={40}
           backSpeed={50}
           loop
-          className="mt-2 bg-gradient-to-r from-purple-400 to-pink-600
+          className="my-2 bg-gradient-to-r from-purple-400 to-pink-600
           bg-clip-text text-3xl text-transparent sm:text-2xl"
         />
-      </section>
-      <section className="mt-10 flex xs:mt-5">
+      </article>
+      <article>
         <p
           className="text-xl font-medium
           text-slate-500 lg:text-white xs:text-lg"
@@ -39,7 +46,7 @@ export const TextAndRedirect = () => {
           <Redirect to="/contact" content="contato" />
           {""}! Obrigado pela sua visita.
         </p>
-      </section>
-    </div>
+      </article>
+    </section>
   );
 };
