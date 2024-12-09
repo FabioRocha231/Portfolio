@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { TextAndRedirect } from './TextAndRedirect'
+import { GreetingsAndRedirects } from "./GreetingsAndRedirects";
 
 export const SvgComponent = () => {
   return (
@@ -9,7 +9,7 @@ export const SvgComponent = () => {
       from-blue-700 via-blue-800 to-black lg:w-full overflow-hidden"
     >
       <div className="flex items-center justify-center px-20 mlg:hidden sm:px-10">
-        <TextAndRedirect />
+        <GreetingsAndRedirects />
       </div>
       <div className="mt-20 flex items-center justify-center xl:h-52 xl:w-96 xs:h-36 xs:w-80">
         <Image
@@ -20,5 +20,5 @@ export const SvgComponent = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
