@@ -1,5 +1,5 @@
 "use client";
-import { Greetings } from "@/components/Greetings";
+import { Greetings } from "@/pages/Greetings";
 import Head from "next/head";
 
 const HomePage = () => {
