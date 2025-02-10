@@ -1,5 +1,4 @@
 import { Icons } from "../Organisms/Icons";
-import { MobileIcons } from "../Atoms/MobileIcon";
 
 export const MySkills = () => {
   return (
