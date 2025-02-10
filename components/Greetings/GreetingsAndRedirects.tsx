@@ -4,15 +4,12 @@ import Redirect from "./Redirect";
 
 const strings = [
   "Fullstack developer",
-  "DevOps",
   "Golang",
   "React",
   "React Native",
   "Next.js",
   "Node.js",
   "Typescript",
-  "Python",
-  "Django",
   "Docker",
   "Kubernetes",
   "AWS",
@@ -25,10 +22,6 @@ const strings = [
   "MongoDB",
   "MySQL",
   "PostgreSQL",
-  "Redis",
-  "Elasticsearch",
-  "Kafka",
-  "RabbitMQ",
 ];
 
 export const GreetingsAndRedirects = () => {
